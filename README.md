@@ -15,3 +15,7 @@
 + vector이미지는 svg로 추출
 + svg의 경우 코드를 html에 복붙해서 fill="currentColor"로 바꿔주면 색깔을 맘대로 변경이 가능하지만 복잡하기 때문에 font로 바꾸기를 권장
 + font로 바꿀 때에는 icomoon이라는 사이트 활용 
+
+💄  2021.08.22 sass 활용한 기본 설정 
+
++ font 설정, color 값 설정 등 상수 값 선언  
