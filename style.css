@@ -416,6 +416,30 @@ ol {
   list-style: none;
   padding-left: 0; }
 
+.tag-red, .tag-gray, .tag-green {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.005em;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-weight: 700; }
+
+.tag-red {
+  color: #fff;
+  background-color: #f86d7d; }
+
+.tag-gray {
+  color: #8c8d96;
+  background-color: #e0e2e7; }
+
+.tag-green {
+  color: #fff;
+  background-color: #22c58b; }
+
 /*
 * mobile ( < 764px) -----------------
 * fixture - sm 
