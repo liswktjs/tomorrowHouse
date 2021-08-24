@@ -29,3 +29,5 @@
 ✨ 2021.08.24 mixin 설정
 
 + mixin 적용시 적용하고 싶은 요소에 @include mixin변수명으로 적용 가능
++ placeholder 선언 방법 %변수 이름 { style 관련 선언}
++ 사용할 때에는 include가 아닌 @extend 활용 
