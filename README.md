@@ -25,3 +25,7 @@
 + unit(콘텐츠표기되는 공간) gutter(unit간의 거리) column(unit 양 옆으로 1/2 gutter 씩 있음)
 + 부트스트랩에서 사용하는 grid 설정 방법 
 + .container (gird 적용되는 영역 설정) , .row (unit를 가로로 정렬할 때 활용 / unit들을 감싼다) , .col- (width 값 설정) 
+
+✨ 2021.08.24 mixin 설정
+
++ mixin 적용시 적용하고 싶은 요소에 @include mixin변수명으로 적용 가능
