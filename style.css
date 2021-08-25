@@ -458,6 +458,18 @@ ol {
   width: 32px;
   height: 32px; }
 
+.star-rating-13 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .star-rating-13 .ic-star {
+    color: #e0e2e7; }
+    .star-rating-13 .ic-star.is-active {
+      color: #3da5f5; }
+
+.star-rating-13 {
+  font-size: 13px; }
+
 /*
 * mobile ( < 764px) -----------------
 * fixture - sm 
