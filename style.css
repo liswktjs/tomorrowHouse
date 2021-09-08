@@ -458,17 +458,84 @@ ol {
   width: 32px;
   height: 32px; }
 
-.star-rating-13 {
+.star-rating-13, .star-rating-16, .star-rating-20, .star-rating-24 {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
-  .star-rating-13 .ic-star {
+  .star-rating-13 .ic-star, .star-rating-16 .ic-star, .star-rating-20 .ic-star, .star-rating-24 .ic-star {
     color: #e0e2e7; }
-    .star-rating-13 .ic-star.is-active {
+    .star-rating-13 .ic-star.is-active, .star-rating-16 .ic-star.is-active, .star-rating-20 .ic-star.is-active, .star-rating-24 .ic-star.is-active {
       color: #3da5f5; }
 
 .star-rating-13 {
   font-size: 13px; }
+
+.star-rating-16 {
+  font-size: 16px; }
+
+.star-rating-20 {
+  font-size: 20px; }
+
+.star-rating-24 {
+  font-size: 24px; }
+
+.price-16,
+.price-20,
+.price-32, .price-off {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .price-16 .amount, .price-20 .amount, .price-32 .amount, .price-off .amount {
+    font-family: "Tahoma", sans-serif;
+    line-height: 1; }
+  .price-16 .currency, .price-20 .currency, .price-32 .currency, .price-off .currency {
+    font-family: "Noto Sans KR", sans-serif; }
+
+.price-16,
+.price-20,
+.price-32 {
+  color: #191a20; }
+  .price-16 .amount,
+  .price-20 .amount,
+  .price-32 .amount {
+    font-weight: 700;
+    letter-spacing: -0.02em; }
+  .price-16 .currency,
+  .price-20 .currency,
+  .price-32 .currency {
+    font-weight: 700; }
+
+.price-16 .amount {
+  font-size: 16px; }
+
+.price-16 .currency {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em; }
+
+.price-20 .amount {
+  font-size: 20px; }
+
+.price-20 .currency {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em; }
+
+.price-32 .amount {
+  font-size: 32px; }
+
+.price-32 .currency {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em; }
+
+.price-off {
+  color: #8c8d96; }
+  .price-off .amount {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    text-decoration: line-through; }
 
 /*
 * mobile ( < 764px) -----------------
