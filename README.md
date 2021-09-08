@@ -36,3 +36,13 @@
 
 + 프로필 사진 등 규격이 정해져 있는 곳에 이미지를 넣어야 할 때에는 img tag를 div tag로 감싸 div tag에서 조절을 해주는 것이 좋다 
 + img에 object-fit: cover (규격이 다른 이미지라도 이미지 중심부를 기준으로 사진을 보여질 수 있게 도와준다)
+
+🎉 2021.09.08 price component, button component들 style 
+
++ display flex와 inline-flex의 차이점
+
+: flex의 경우 block 취급을 하여 요소들이 수직으로 쌓이도록 하고 
+
+inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수평적으로 쌓이게 된다 
+
++ button 스타일 설정시 tip!: 버튼은 textContent에 따라서 widht값이 달라질 수 있기 때문에 width보다는 통일된 height값을 button들에 적용하는 것이 더 효율적이다 
