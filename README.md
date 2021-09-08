@@ -36,3 +36,5 @@
 
 + 프로필 사진 등 규격이 정해져 있는 곳에 이미지를 넣어야 할 때에는 img tag를 div tag로 감싸 div tag에서 조절을 해주는 것이 좋다 
 + img에 object-fit: cover (규격이 다른 이미지라도 이미지 중심부를 기준으로 사진을 보여질 수 있게 도와준다)
+
+🎉 2021.09.08 price component, button component들 style 
