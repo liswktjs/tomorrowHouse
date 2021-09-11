@@ -672,6 +672,59 @@ ol {
     font-size: 20px;
     color: #8c8d96; }
 
+.pagination .page-control, .pagination .page-item a,
+.pagination .page-item button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #3f4150;
+  height: 26px;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 4px; }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .pagination .page-control {
+    width: 26px;
+    border: 1px solid #e0e2e7; }
+    .pagination .page-control.page-prev {
+      margin-right: 24px; }
+      .pagination .page-control.page-prev .ic-chevron {
+        transform: rotate(90deg); }
+    .pagination .page-control.page-next {
+      margin-left: 24px; }
+      .pagination .page-control.page-next .ic-chevron {
+        transform: rotate(-90deg); }
+    .pagination .page-control:hover {
+      opacity: 0.4; }
+    .pagination .page-control .ic-chevron {
+      font-size: 20px; }
+  .pagination .page-list {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .pagination .page-item {
+    margin-right: 4px; }
+    .pagination .page-item.is-active a,
+    .pagination .page-item.is-active button {
+      background-color: #3da5f5;
+      color: #fff !important; }
+    .pagination .page-item:last-child {
+      margin-right: 0; }
+    .pagination .page-item a,
+    .pagination .page-item button {
+      min-width: 26px;
+      padding: 0 4px; }
+      .pagination .page-item a:hover,
+      .pagination .page-item button:hover {
+        color: #3da5f5; }
+
 /*
 * mobile ( < 764px) -----------------
 * fixture - sm 
