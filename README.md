@@ -64,3 +64,8 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
 그리고 특정한 위치에 놓고 싶은 이미지요소에 position :absolute를 적용시킨다 이로써, 자신의 부모 요소(position:relative를 선언한 요소)를 기준으로 position을 결정한다 
 
 추가적으로 만약, 해당 요소를 y축의(세로축) 정가운데 위치시키고 싶다면 transform: translateY(-50%)을 적용 할 수 있다
+
++ select의 위에 새롭게 올린 버튼 V 를 클릭했을때 기존과 같이 동일한 event가 발생하도록 하고 싶을 때 
+
+: position:absolute를 통해서 select 요소위에 V 를 새롭게 올린 것 이므로, V 버튼이 select 요소보다 위에 쌓인 것이 된다. 그러므로 select에 적용한 스타일들이 적용이 안된다 이중 가장 큰 문제는 V를 눌렀을 떄에 select 요소들이 나타나지 않는다는 것이다! 이를 해결하고 싶을 때에는 여러가지 방법이 있지만 가장 간단한 것은 V에 pointer-events:none을 적용하는 것이다 
+이를 적용함으로써 V요소의 클릭이벤트를 무시한다는 것이 되므로 V 영역을 클릭했을때에 select를 클릭한 것과 동일한 방식으로 작동될 수 있다
