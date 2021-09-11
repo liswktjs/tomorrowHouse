@@ -46,3 +46,21 @@
 inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수평적으로 쌓이게 된다 
 
 + button 스타일 설정시 tip!: 버튼은 textContent에 따라서 widht값이 달라질 수 있기 때문에 width보다는 통일된 height값을 button들에 적용하는 것이 더 효율적이다 
+
+🥪 2021.09.11 form style 설정 
+
++ option tag 간편하게 여러개 작성하기 : option[value="$"]*5{선택 $}   -> option이라는 tag는 자신의 순서를 value로 가지고 textContent로는 선택 자신의 순서 라고 된 tag를 5개를 생성하게 된다 
+
++ select tag의 경우 user style sheet에 의해서 기본으로 정해진 스타일의 틀이 있는데 만약 이걸 없애고 새롭게 디자인을 하고 싶다면 apperance:none을 적용시킨다 
+
++ input의 placeholder의 글자색을 바꾸고 싶은 경우 input::placeholder{ color: #원하는색 }식으로 표기를 한다 (*::이 두개 이다) 
+
++ disabled의 상태일때를 제외하고 오직 hover일 때만 특정 효과를 적용하고 싶을 때 : (tag이름이나 class이름):not(:disabled):hover{ style 선언문} 
+
++ 이미지를 요소 안의 특정한 위치에 위치시키고 싶을때: 
+
+해당 이미지를 감싸고 있는 부모 요소에 position: relative를 적용시킨다 이로써, 해당 요소를 기준으로 top, left등의 오프셋이 결정된다 
+
+그리고 특정한 위치에 놓고 싶은 이미지요소에 position :absolute를 적용시킨다 이로써, 자신의 부모 요소(position:relative를 선언한 요소)를 기준으로 position을 결정한다 
+
+추가적으로 만약, 해당 요소를 y축의(세로축) 정가운데 위치시키고 싶다면 transform: translateY(-50%)을 적용 할 수 있다
