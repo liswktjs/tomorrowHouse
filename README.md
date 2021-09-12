@@ -69,3 +69,19 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
 
 : position:absolute를 통해서 select 요소위에 V 를 새롭게 올린 것 이므로, V 버튼이 select 요소보다 위에 쌓인 것이 된다. 그러므로 select에 적용한 스타일들이 적용이 안된다 이중 가장 큰 문제는 V를 눌렀을 떄에 select 요소들이 나타나지 않는다는 것이다! 이를 해결하고 싶을 때에는 여러가지 방법이 있지만 가장 간단한 것은 V에 pointer-events:none을 적용하는 것이다 
 이를 적용함으로써 V요소의 클릭이벤트를 무시한다는 것이 되므로 V 영역을 클릭했을때에 select를 클릭한 것과 동일한 방식으로 작동될 수 있다
+
+🍦 2021.09.12 uitility class 업데이트 , global navigation bar layout
+
++ .visually-hidden : 부트스트랩에서 사용하는 방법, 특정 버튼(알림, 북마크 등 텍스트가 없이 그림으로만 웹상에서 존재하는 것)을 클릭할때 스크린 리더에 text로 어떤 것을 입력했는지 값을 전단해야 할 때 사용한다 
+
+.visually-hidden {
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+} 
