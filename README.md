@@ -85,3 +85,5 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   white-space: nowrap !important;
   border: 0 !important;
 } 
+
++ nav tag를 사용할 때에는 nav tag안에 h1~h3... 등의 tag를 활용해서 해당 nav가 무엇을 가리키는지 표기를 해주어야 
