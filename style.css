@@ -391,7 +391,7 @@ ol {
   .md-hidden {
     display: none !important; } }
 
-@media screen and (min-width: 1200px -1) {
+@media screen and (min-width: 1199px) {
   .lg-hidden {
     display: none !important; } }
 

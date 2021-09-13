@@ -9,7 +9,6 @@
       전기히터 &gt; 캠핑/가정용 400W 미니멀 전기히l터 VO-HT015
       (안전장치기능탑재) | 내일의 집
     </title>
-
     <link
       rel="icon"
       type="image/png"
@@ -23,131 +22,112 @@
       href="./favicon-16x16.png?r=31241"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
-    <div class="container">
-      <div>
-        <strong class="tag-red"> 특가 </strong>
-        <div class="tag-gray">무료배송</div>
-        <button class="tag-green">하루배송</button>
-      </div>
-      <div>
-        <div class="avatar-32">
-          <img src="./assets/images/img-user-01.jpg" alt="유저 이미지" />
-        </div>
-        <div class="avatar-24">
-          <img src="./assets/images/img-user-01.jpg" alt="유저 이미지" />
-        </div>
-      </div>
+    <header class="gnb">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="gnb-left">
+              <h1 class="logo">
+                <a href="/"
+                  ><img src="./assets/images/Logo.svg" alt="내일의 집"
+                /></a>
+              </h1>
 
-      <div>
-        <div class="star-rating-13">
-          <i class="ic-star is-active"></i>
-          <i class="ic-star is-active"></i>
-          <i class="ic-star is-active"></i>
-          <i class="ic-star is-active"></i>
-          <i class="ic-star is-active"></i>
-        </div>
-      </div>
+              <nav class="gnb-nav sm-hidden">
+                <h2 class="visually-hidden">메뉴</h2>
+                <ul class="gnb-nav-list">
+                  <li class="gnb-nav-item"><a href="/">커뮤니티</a></li>
+                  <li class="gnb-nav-item"><a href="/">스토어</a></li>
+                  <li class="gnb-nav-item"><a href="/">인테리어시공</a></li>
+                </ul>
+              </nav>
 
-      <div>
-        <div class="price-off">
-          <strong class="amount">40,000</strong>
-          <span class="currency">원</span>
-        </div>
-        <div class="price-16">
-          <strong class="amount">40,000</strong>
-          <span class="currency">원</span>
-        </div>
-        <div class="price-20">
-          <strong class="amount">40.000</strong>
-          <span class="currency">원</span>
-        </div>
-        <div class="price-32">
-          <strong class="amount">40.000</strong>
-          <span class="currency">원</span>
-        </div>
-      </div>
+              <button
+                type="button"
+                class="sm-only gnb-icon-button"
+                aria-label="메뉴 열기 버튼"
+              >
+                <i class="ic-menu"></i>
+              </button>
+            </div>
 
-      <div>
-        <button class="btn-primary btn-32" type="button">버튼</button>
-        <button class="btn-secondary btn-32" type="button">버튼</button>
-        <button class="btn-outlined btn-32" type="button">버튼</button>
-        <button class="btn-ghost btn-32" type="button">버튼</button>
+            <div class="gnb-right">
+              <div class="input-group" class="lg-only">
+                <i class="ic-search" aria-hidden></i>
+                <input
+                  class="form-input"
+                  type="text"
+                  placeholder="스토어 검색"
+                />
+              </div>
 
-        <button class="btn-primary btn-40 type="button">버튼</button>
-        <button class="btn-secondary btn-40" type="button">버튼</button>
-        <button class="btn-outlined btn-40" type="button">버튼</button>
-        <button class="btn-ghost btn-40" type="button">버튼</button>
+              <div class="button-group">
+                <button
+                  type="button"
+                  class="gnb-icon-button lg-hidden"
+                  aria-label="검색창 열기 버튼"
+                >
+                  <i class="ic-search"></i>
+                </button>
 
-        <button class="btn-primary btn-48" type="button">버튼</button>
-        <button class="btn-secondary btn-48" type="button">버튼</button>
-        <button class="btn-outlined btn-48" type="button">버튼</button>
-        <button class="btn-ghost btn-48" type="button">버튼</button>
+                <a
+                  href="/"
+                  class="sm-hidden gnb-icon-button"
+                  aria-label="스크랩북 페이지로 이동"
+                >
+                  <i class="ic-bookmark"></i>
+                </a>
 
-        <button class="btn-primary btn-55" type="button">버튼</button>
-        <button class="btn-secondary btn-55" type="button">버튼</button>
-        <button class="btn-outlined btn-55" type="button">버튼</button>
-        <button class="btn-ghost btn-55" type="button">버튼</button>
+                <a
+                  href="/"
+                  class="sm-hidden gnb-icon-button"
+                  aria-label="내 소식 페이지로 이동"
+                >
+                  <i class="ic-bell"></i>
+                </a>
 
-        
+                <a
+                  href="/"
+                  class="gnb-icon-button"
+                  aria-label="장바구니로 이동"
+                >
+                  <i class="ic-cart"></i>
+                </a>
 
-      </div>
-      <div>
-        <button class="btn-primary btn-55 " disabled type="button">버튼</button>
-        <button class="btn-secondary btn-55 " disabled type="button">버튼</button>
-        <button class="btn-outlined btn-55" disabled type="button">버튼</button>
-        <button class="btn-ghost btn-55" disabled type="button">버튼</button>
-      </div>
+                <button
+                  type="button"
+                  class="sm-hidden gnb-avatar-button"
+                  aria-label="마이메뉴 열기 버튼"
+                >
+                  <div class="avatar-32">
+                    <img
+                      src="./assets/images/img-user-01.jpg"
+                      alt="프로필 사진"
+                    />
+                  </div>
+                </button>
 
-      <div>
-
-        <div class="select-group is-active">
-          <select class="form-select">
-            <option value="1">선택사항 1</option>
-            <option value="2">선택사항 2</option>
-            <option value="3">선택사항 3</option>
-            <option value="4">선택사항 4</option>
-            <option value="5">선택사항 5</option>
-          </select>
-          <i class="ic-caret" aria-hidden></i>
-        </div>
-
-
-        <div class="input-group">
-          <i class="ic-search" aria-hidden></i>
-          <input class="form-input" type="text" placeholder="스토어 검색">
-        </div>
-        
-      </div>
-
-      <div>
-        <div class="pagination">
-          <button class="page-control page-prev" type="button">
-            <i class="ic-chevron"></i>
-          </button>
-          <ol class="page-list">
-            <li class="page-item is-active"><a href="/">11111111</a></li>
-            <li class="page-item"><a href="/">2</a></li>
-            <li class="page-item"><a href="/">3</a></li>
-            <li class="page-item"><a href="/">4</a></li>
-            <li class="page-item"><a href="/">5</a></li>
-          </ol>
-          <button class="page-control page-next" type="button">
-            <i class="ic-chevron"></i>
-          </button>
+                <button
+                  type="button"
+                  class="sm-hidden btn-40 btn-primary"
+                  aria-label="글쓰기 버튼"
+                >
+                  글쓰기 <i class="ic-chevron" aria-hidden></i>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    
+    </header>
   </body>
 </html>
