@@ -95,3 +95,7 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
 + inline요소는 width와 height을 적용할 수 없으므로 img를 사용할때 안전하게 display:block을 한번 더 선언해주는 것이 좋다
 
 + scss에서 클래스명이 부모의 클래스 이름을 따라갈때 예시 (부모 : gnb  자식: gnb-button) 일때 .gnb { &-button{ } } 식으로 간단하게 표현할 수 있다
+
+🎠 2021.09.19 GNB layout markup
+
+
