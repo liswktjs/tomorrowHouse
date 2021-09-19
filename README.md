@@ -86,4 +86,16 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   border: 0 !important;
 } 
 
-+ nav tag를 사용할 때에는 nav tag안에 h1~h3... 등의 tag를 활용해서 해당 nav가 무엇을 가리키는지 표기를 해주어야 
++ nav tag를 사용할 때에는 nav tag안에 h1~h3... 등의 tag를 활용해서 해당 nav가 무엇을 가리키는지 표기를 해주어야 한다
+
+🎀 2021.09.13 layout 잡기 
+
++ grid layout을 적용할때 : .container > .row > .col > header, div 등등 순으로 소속이 되어있어야 된다 
+
++ inline요소는 width와 height을 적용할 수 없으므로 img를 사용할때 안전하게 display:block을 한번 더 선언해주는 것이 좋다
+
++ scss에서 클래스명이 부모의 클래스 이름을 따라갈때 예시 (부모 : gnb  자식: gnb-button) 일때 .gnb { &-button{ } } 식으로 간단하게 표현할 수 있다
+
+🎠 2021.09.19 GNB layout markup
+
+
