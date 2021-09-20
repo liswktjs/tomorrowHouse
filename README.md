@@ -98,4 +98,6 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
 
 🎠 2021.09.19 GNB layout markup
 
-🎃 2021.09.20 hover,focus, active, disabled등 유저 활동에 대응하여 디자인 반
+🎃 2021.09.20 hover,focus, active, disabled등 유저 활동에 대응하여 디자인 반영 
+
+: 유저가 어떤 아이콘이나 링크를 클릭했을때 대상의 색이 변하는 애니메이션을 구현할 때에 범위를 넓혀주기 위해서 대상이 되는 것에 padding값을 줄 수 있다 이때에, padding값이 늘어난 만큼 예를 들어 width에 padding값 만큼을 뺸 것으로 업데이트를 해주어야 디자인이 변하지 않는다 -> 그리고 해당 padding값을 줄때에는 변수로 활용하면 후에 유지보수 할 때에 더 편
