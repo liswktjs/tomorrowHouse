@@ -98,4 +98,4 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
 
 🎠 2021.09.19 GNB layout markup
 
-
+🎃 2021.09.20 hover,focus등 
