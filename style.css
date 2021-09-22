@@ -968,6 +968,19 @@ i {
         margin-right: 24px; }
         .gnb-right .button-group .gnb-icon-button {
           margin-right: 8px; }
+        .gnb-right .button-group .gnb-auth {
+          margin-left: 8px; }
+          .gnb-right .button-group .gnb-auth a {
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            color: #8c8d96;
+            font-weight: 700; }
+            .gnb-right .button-group .gnb-auth a:first-child {
+              margin-right: 12px; }
+          .gnb-right .button-group .gnb-auth a:hover {
+            color: #3da5f5;
+            transition: color 200ms ease-in-out; }
     .gnb-wrapper {
       height: 80px; }
     .gnb .logo {
