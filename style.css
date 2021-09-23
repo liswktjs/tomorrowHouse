@@ -829,6 +829,51 @@ i {
       color: #fff;
       background-color: #3da5f5; } }
 
+.my-menu {
+  position: relative; }
+  .my-menu-content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18); }
+    .my-menu-content::before, .my-menu-content::after {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      content: '';
+      display: block;
+      top: -24px;
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 10px solid transparent; }
+    .my-menu-content::before {
+      border-bottom-color: #e0e2e7; }
+    .my-menu-content::after {
+      border-bottom-color: #fff;
+      top: -23px; }
+  .my-menu-list {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #e0e2e7;
+    border-radius: 4px;
+    background-color: #fff; }
+  .my-menu-item a,
+  .my-menu-item button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 44px;
+    padding: 0 8px;
+    border-radius: 2px; }
+    .my-menu-item a:hover,
+    .my-menu-item button:hover {
+      background-color: #f7f8fa; }
+
 /*
 * mobile ( < 764px) -----------------
 * fixture - sm 
