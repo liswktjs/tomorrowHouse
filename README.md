@@ -135,3 +135,6 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
 
 - sidebar 메뉴의 경우 기본적인 화면에서는 보이지 않다가 보여지는 것이기 때문에 주로 <aside>라는 tag를 활용해서 만드는 편이다  
 
+- a 요소에 display:block을 주게 되면 링크의 클릭 범위가 넓어지게된다 만약 클릭범위를 조정하고 싶다면 display:flex를 사용하여야 한다 a을 감싸고 있는 요소에 display:flex를, a 에는 기존과 같이 display:block을 적용하게 되면 링크의 크기 만큼만이 클릭범위가 된다
+  
+  
