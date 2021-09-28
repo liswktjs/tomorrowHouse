@@ -172,3 +172,13 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   ::webkit-scrollbar { display:none} 안에 다양한 선언을 할 수 있다 해당 예시는 scrollbar가 화면에 보여지지 않는다 
   
   ::webkit-scrollbar-thumb { } -> 현재 유저가 스크롤중 가리키고 있는 부분 스크롤을 내리거나 올리면 따라서 해당 부분이 움직인다 
+  
+  - 사이드바가 튀어나왔을 때 사이드 바의 내용을 불투명하게 blind처리를 해주고 싶을 때 
+  
+  : 우선 뒷부분 배경을 blind처리를 해줄 빈 태그를 하나 생성한다 
+  
+  그리곤 스타일 적용을 통해서 width:100% height: 100vh; 등의 설정을 통해서 화면을 꽉 채운뒤 배경을 불투명하게 설정을 한다 
+  
+  그후 z-index를 통해서 배경이 되는 tag의 z-index 값을 사이드 바 보다 작게 설정한다 
+  
+  - 사이드 바의 스크롤을 내렸을때 배경 내용들이 따라 내려오지 않게 하는 방법 : overscroll-behavior: contain 으로 설정한다 (overflow:auto 를 적용한 곳에 똑같이)
