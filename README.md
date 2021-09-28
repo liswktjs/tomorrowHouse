@@ -151,3 +151,6 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   
   -> 최종적으로는 whitespace:nowrap, overflow:hidden, text-overflow:ellipsis를 선언하게 되면 ...처리를 할 수 있게 된다 flex-grow의 경우는 상황에 따라서 다르게 적용
   
+🍱 2021.09.28 drawer 반응형 애니메이션 추가하기 
+  
+  - 화살표가 돌아가는 애니메이션을 표현하고 싶다면 : transition: transform 200ms ease-in-out 사용 (물론 변한 상태에서 화살표가 변한 각도 표기 필수 예시: transform: rotate(180deg) (추가적으로 방향이 변했을때 수평이 맞지 않는다면 translateY 등을 적용해 볼것 )) 
