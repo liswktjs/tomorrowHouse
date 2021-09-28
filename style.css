@@ -1144,9 +1144,20 @@ i {
       margin-right: 24px; } }
 
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 240px;
+  height: 100vh;
+  overflow: auto;
+  overscroll-behavior: contain;
   padding: 32px 20px;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 20;
+  transform: translate3d(-240px, 0, 0);
+  transition: transform 300ms ease-in-out; }
+  .sidebar.is-active {
+    transform: translate3d(0, 0, 0); }
   .sidebar-header {
     padding: 0 12px; }
     .sidebar-header .logo {
@@ -1208,5 +1219,23 @@ i {
       padding: 0 12px; }
       .sidebar-user-menu .user-menu-item a:active {
         color: #3da5f5; }
+  .sidebar::-webkit-scrollbar {
+    display: none; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(63, 65, 80, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out;
+  transition: visibility 200ms ease-in-out; }
+  .overlay.is-active {
+    opacity: 1;
+    visibility: visible; }
 
 /*# sourceMappingURL=style.css.map */
