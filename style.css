@@ -902,6 +902,78 @@ i {
     .my-menu-item button:hover {
       background-color: #f7f8fa; }
 
+.drawer-menu.is-active .drawer-menu-button {
+  color: #3da5f5; }
+
+.drawer-menu.is-open.is-community .drawer-menu-content {
+  max-height: 296px; }
+
+.drawer-menu.is-open.is-expert .drawer-menu-content {
+  max-height: 80px; }
+
+.drawer-menu.is-open.is-store .drawer-menu-content {
+  max-height: 332px; }
+
+.drawer-menu.is-open .drawer-menu-button .ic-chevron {
+  transform: translateY(-50%) rotate(180deg); }
+
+.drawer-menu.is-open .drawer-menu-list {
+  padding-bottom: 8px; }
+
+.drawer-menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
+  color: #3f4150;
+  width: 100%;
+  height: 54px;
+  padding: 0 8px;
+  position: relative;
+  font-weight: 700;
+  transition: color 200ms ease-in-out; }
+  .drawer-menu-button i:first-child {
+    position: relative;
+    top: 1px;
+    margin-right: 8px;
+    font-size: 24px;
+    color: #3f4150; }
+  .drawer-menu-button i:last-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    font-size: 16px;
+    color: #3f4150;
+    transition: transform 200ms ease-in-out; }
+
+.drawer-menu-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 200ms ease-in-out; }
+
+.drawer-menu-item.is-active a {
+  color: #3da5f5; }
+
+.drawer-menu-item a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #3f4150;
+  width: 100%;
+  height: 36px;
+  padding: 0 12px;
+  font-weight: 700; }
+
+.drawer-menu-item .ic-new {
+  font-size: 16px;
+  color: #f86d7d; }
+
 /*
 * mobile ( < 764px) -----------------
 * fixture - sm 

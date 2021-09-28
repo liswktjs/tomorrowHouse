@@ -1,0 +1,86 @@
+.drawer-menu {
+  $drawer-menu-item-height: 36px;
+  $community-menu-item-length: 8;
+  $store-menu-item-length: 9;
+  $expert-menu-item-length: 2;
+  &.is-active {
+    .drawer-menu-button {
+      color: $blue;
+    }
+  }
+
+  &.is-open {
+    &.is-community {
+      .drawer-menu-content {
+        max-height: $drawer-menu-item-height * $community-menu-item-length + 8px;
+      }
+    }
+    &.is-expert {
+      .drawer-menu-content {
+        max-height: $drawer-menu-item-height * $expert-menu-item-length + 8px;
+      }
+    }
+    &.is-store {
+      .drawer-menu-content {
+        max-height: $drawer-menu-item-height * $store-menu-item-length + 8px;
+      }
+    }
+    .drawer-menu-button .ic-chevron {
+      transform: translateY(-50%) rotate(180deg);
+    }
+    .drawer-menu-list {
+      padding-bottom: 8px;
+    }
+  }
+  &-button {
+    @include flexbox(start);
+    @include text-style(18, $primary);
+    width: 100%;
+    height: 54px;
+    padding: 0 8px;
+    position: relative;
+    font-weight: 700;
+    transition: color 200ms ease-in-out;
+
+    i:first-child {
+      position: relative;
+      top: 1px;
+      margin-right: 8px;
+      font-size: 24px;
+      color: $primary;
+    }
+    i:last-child {
+      @include pos-center-y;
+      right: 8px;
+      font-size: 16px;
+      color: $primary;
+      transition: transform 200ms ease-in-out;
+    }
+  }
+
+  &-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 200ms ease-in-out;
+  }
+
+  &-item {
+    &.is-active {
+      a {
+        color: $blue;
+      }
+    }
+    a {
+      @include flexbox(start);
+      @include text-style(14, $primary);
+      width: 100%;
+      height: $drawer-menu-item-height;
+      padding: 0 12px;
+      font-weight: 700;
+    }
+    .ic-new {
+      font-size: 16px;
+      color: $red;
+    }
+  }
+}
