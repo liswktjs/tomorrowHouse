@@ -181,4 +181,8 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   
   그후 z-index를 통해서 배경이 되는 tag의 z-index 값을 사이드 바 보다 작게 설정한다 
   
+  + 추가적으로 상태에 따라 배경이 blind되거나 안되거나 처리를 해야할 때는 opacity값과 함께 visibility도 같이 설정해주는 것이 좋다 
+  
+  배경이 blind일때 opacity:0 / visibility:hidden => opacity:1 / visibility:visible    (*transition을 통해 애니메이션을  넣어주는 것도 잊지 말자)
+  
   - 사이드 바의 스크롤을 내렸을때 배경 내용들이 따라 내려오지 않게 하는 방법 : overscroll-behavior: contain 으로 설정한다 (overflow:auto 를 적용한 곳에 똑같이)
