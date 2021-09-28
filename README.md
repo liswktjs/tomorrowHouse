@@ -154,3 +154,9 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
 🍱 2021.09.28 drawer 반응형 애니메이션 추가하기 
   
   - 화살표가 돌아가는 애니메이션을 표현하고 싶다면 : transition: transform 200ms ease-in-out 사용 (물론 변한 상태에서 화살표가 변한 각도 표기 필수 예시: transform: rotate(180deg) (추가적으로 방향이 변했을때 수평이 맞지 않는다면 translateY 등을 적용해 볼것 )) 
+
+  - 화살표 눌렀을 때 메뉴가 나오도록 하는 것 (drop-down 애니메이션 구현하는 법) 
+  단순히 상태에 따라서 display block none으로 처리하게 된다면 애니메이션을 적용하기 힘들다 
+  
+  그래서 메뉴가 보이면 안될 때에는 max-height(경우에 따라서 width)을 0으로 설정하고 메뉴가 보일때에는 요소의 크기에 따라서 max-height의 크기를 다시 설정한다 
+  그리고 해당 크기가 변할때에 transtition: max-height 200ms ease-int-out 과같이 설정하여 자연스럽게 메뉴가 접혔다 펴지는 것 처럼 보여지게된다 
