@@ -12,17 +12,18 @@
   &.is-open {
     &.is-community {
       .drawer-menu-content {
-        max-height: $drawer-menu-item-height * $community-menu-item-length + 8px;
+        max-height: $drawer-menu-item-height * $community-menu-item-length +
+          20px;
       }
     }
     &.is-expert {
       .drawer-menu-content {
-        max-height: $drawer-menu-item-height * $expert-menu-item-length + 8px;
+        max-height: $drawer-menu-item-height * $expert-menu-item-length + 20px;
       }
     }
     &.is-store {
       .drawer-menu-content {
-        max-height: $drawer-menu-item-height * $store-menu-item-length + 8px;
+        max-height: $drawer-menu-item-height * $store-menu-item-length + 20px;
       }
     }
     .drawer-menu-button .ic-chevron {
