@@ -1001,7 +1001,10 @@ i {
   font-weight: 400; }
 
 .search-history-item {
-  position: relative; }
+  position: relative;
+  border-radius: 2px; }
+  .search-history-item:hover {
+    background-color: #f7f8fa; }
   .search-history-item .word-button {
     font-size: 16px;
     line-height: 24px;
@@ -1022,6 +1025,8 @@ i {
     height: 32px;
     font-size: 16px;
     color: #b2b3b9; }
+    .search-history-item .delete-button:hover {
+      color: #3f4150; }
 
 /*
 * mobile ( < 764px) -----------------
@@ -1295,7 +1300,11 @@ i {
   width: 100%;
   height: 100vh;
   padding: 12px 0;
-  background-color: #fff; }
+  background-color: #fff;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 300ms ease-in-out; }
+  .search-modal.is-active {
+    transform: translate3d(0, 0, 0); }
   .search-modal-header {
     margin-bottom: 20px; }
   .search-modal-form {
