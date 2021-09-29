@@ -80,10 +80,30 @@
   }
 
   @include responsive(D) {
-    &-right {
+    &-search {
+      position: relative;
+      margin-right: 24px;
+      width: 264px;
       .input-group {
-        width: 264px;
-        margin-right: 24px;
+        width: 100%;
+      }
+      .search-history {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        display: none;
+        width: 100%;
+        padding: 16px 8px 8px;
+        background-color: $white;
+        border-radius: 4px;
+        border: 1px solid $border;
+        box-shadow: $dropdown-shadow;
+        &.is-active {
+          display: block;
+        }
+        &-header {
+          padding: 0 8px;
+        }
       }
     }
   }
