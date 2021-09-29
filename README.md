@@ -189,3 +189,5 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   
   - 사이드 바가 사라질때 transform: translate3d(-content의 width요소,0,0) -> 다시 사이드 바가 활성화(나타나야 할때) transform: translate3d(0,0,0) 
   +transition을 통해서 애니메이션 적용하기 
+  
+🧶 2021.09.29 search 부분 
