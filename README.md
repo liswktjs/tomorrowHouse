@@ -194,3 +194,5 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   
   - transition 의 작동이 스무스하게 되지 않는 요소들 
   width, height, padding, margin, border, top, right, bottom, left 해당 요소들은 애니메이션이 스무스하게 작동되지 않아서 이들을 대체해 transform3d, transform등을 사용한다
+  
+  - position:absolute를 적용한 element의 경우 width: 100%를 주게 되면 해당 값은 position:relative를 적용한 부모의 width값과 
