@@ -191,3 +191,6 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   +transition을 통해서 애니메이션 적용하기 
   
 🧶 2021.09.29 search 부분 
+  
+  - transition 의 작동이 스무스하게 되지 않는 요소들 
+  width, height, padding, margin, border, top, right, bottom, left 해당 요소들은 애니메이션이 스무스하게 작동되지 않아서 이들을 대체해 transform3d, transform등을 사용한다
