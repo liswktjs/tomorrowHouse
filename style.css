@@ -974,6 +974,55 @@ i {
   font-size: 16px;
   color: #f86d7d; }
 
+.search-history-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px; }
+  .search-history-header .title,
+  .search-history-header button {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #8c8d96;
+    font-weight: 400; }
+
+.search-history-content .placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #b2b3b9;
+  width: 100%;
+  height: 44px;
+  padding: 0 8px;
+  font-weight: 400; }
+
+.search-history-item {
+  position: relative; }
+  .search-history-item .word-button {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+    width: 100%;
+    padding: 10px 32px 10px 8px;
+    text-align: left;
+    font-weight: 400; }
+  .search-history-item .delete-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    color: #b2b3b9; }
+
 /*
 * mobile ( < 764px) -----------------
 * fixture - sm 
@@ -1237,5 +1286,28 @@ i {
   .overlay.is-active {
     opacity: 1;
     visibility: visible; }
+
+.search-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  width: 100%;
+  height: 100vh;
+  padding: 12px 0;
+  background-color: #fff; }
+  .search-modal-header {
+    margin-bottom: 20px; }
+  .search-modal-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .search-modal-form .input-group {
+      flex-grow: 1; }
+    .search-modal-form .btn-ghost {
+      flex-shrink: 0;
+      flex-grow: 0;
+      width: 56px;
+      padding-left: 8px; }
 
 /*# sourceMappingURL=style.css.map */
