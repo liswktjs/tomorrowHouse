@@ -198,3 +198,19 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   - position:absolute를 적용한 element의 경우 width: 100%를 주게 되면 해당 값은 position:relative를 적용한 부모의 width값과 
 
  🩹 2021.10.11 LNB(local navigation bar) 부분 
+  
+  - inline 요소들 경우 width 값을 설정하지 않으면 해당 요소들의 크기 만큼 witdh값을 가지게 된다 (->inline-flexbox의 경우 inline의 특징도 취할 수 있다)
+  
+  - overflow를 적용할때 주의점 -> overflow의 기준점 설정이 중요하다 (width height를 어떻게 설정 할 것인지) 만약 width height값이 정해져 있다면 해당 값을 충족하는 요소에 overflow를 적용시킬 것!
+  
+ - width: max-content -> 자신이 가지고 있는 자식 요소들의 width가 가장 길다고 가정하여서 계산하였을때의 길이 
+  min-content -> 자신의 자식 요소들의 width가 가장 짧다고 가정하여서 계산하였을 때의 길이 
+  
+  단점) 브라우저들 중 max-content가 호환이 되지 않는 곳이 많다 
+  
+ - display: inline-flex + white-space: nowrap 
+  : inline-flex -> inline-block 와 같은 특성을 가지고 있음 (block은 부모 요소의 width,height값을 기준으로 삶고 inline-block의 경우 자식 요소들의 width값에 맞춰 길이를 가지게 된다) 
+  
+  white-space:nowrap -> 적용이된 요소 안에 들어있는 inline-block속성을 가진 요소들에게 한 줄을 유지하라는 설정
+  
+  => 두 가지를 같이 적용하게 되면 자식요소에 있는 text가 2줄 변환 등의 변화 없이 한줄을 유지하면서 자신의 text길이에 따라서 width들을 가지게 되고 해당 width값들을 합친 만큼 inline-flex가 적용된 요소의 width값이 설정이 되게 된다 만약 해당 요소가 전체의 뷰포트보다 크다면 overflow:auto를 활용하여 스크롤로 보이게 할 수 있다
