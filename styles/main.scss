@@ -13,6 +13,7 @@
 @import './mixins/responsive';
 @import './mixins/position';
 @import './mixins/felxbox';
+@import './mixins/scrollbar';
 
 @import './modules/tags';
 @import './modules/avatars.scss';
@@ -35,3 +36,4 @@
 @import './layouts/overlay';
 @import './layouts/search-modal';
 @import './layouts/lnb';
+@import './layouts/global-footer';
