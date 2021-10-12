@@ -214,3 +214,10 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   white-space:nowrap -> 적용이된 요소 안에 들어있는 inline-block속성을 가진 요소들에게 한 줄을 유지하라는 설정
   
   => 두 가지를 같이 적용하게 되면 자식요소에 있는 text가 2줄 변환 등의 변화 없이 한줄을 유지하면서 자신의 text길이에 따라서 width들을 가지게 되고 해당 width값들을 합친 만큼 inline-flex가 적용된 요소의 width값이 설정이 되게 된다 만약 해당 요소가 전체의 뷰포트보다 크다면 overflow:auto를 활용하여 스크롤로 보이게 할 수 있다
+  
+🎨 2021.10.12 footer 부분 
+  
+ - <dl> 설명이나 정의를 적는 tag 
+  해당 tag의 경우 <dt>,<dd> tag만을 자식요소로 가지고 추가적으로 해당 tag들을 감싸는 div tag를 가질 수 있다 
+  
+  <dt>의 경우 용어 <dd>의 경우 <dt>에서 입력한 용어에 대한 설명을 적는다 
