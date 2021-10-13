@@ -226,5 +226,34 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   
  - breadcrumb: 현재페이지 까지 거쳐온 페이지단계를 표시
 
- 💄 2021.10.13 breadcrumb 부분 
+ 💄 2021.10.13 breadcrumb 부분 / slider, carousel 부분 공부 
+  
+  - figure tag : img tag 단독으로 사용하는 것이 아닌 img tag를 figure tag로 감싸게 되면 좀 더 sematic 해진다 
+  figure는 figcaption과 함께 사용된다 figcaption에는 figure안에 들어간 content에 대한 설명을 입력한다 (참고로 figcaption은 figure tag안에 넣어준다) 
+  
+  - WAI-ARIA role: aira-label(마크업 상으로 텍스트를 제공하지 않지만 스크린 리더로 제공될 정보들에 관해서 입력할때 사용), aria-hidden(정보로써 사용하지 않아서 무시해도 되는 것을 입력할 때 사용) 등과 같이 브라우저를 더 시멘틱하게 입력하기 위해 사용되는 것이다 
+  
+  WAI-ARIA role에는 크게 3가지가 존재한다 ) role, property, state 
+  
+  1. role 
+  role은 tag가 브라우저 상에서 어떤 역할을 수행하는지 명시적으로 작성하는 것 
+  role에 적용할 수 있는 값들은 정해져 있으므로 해당 값들을 필요에 따라 선택하여 사용하여야 한다 
+  
+  2. proerty (속성) 
+  추가적인 의미나 속성을 부여하는데 사용할 수 있는 속성의 요소를 정의하는데 사용 
+  이미지 alt 대신에 사용이 가능하다 
+  ex) aria-required="true"
+  
+  3. state (상태)
+  aria-disabled="true" 과 같이 스크린리더에게 현재 상태를 알려주는 역할로 사용 
+  
+  
+  - WAI-ARIA role 예시들 공부 
+  
+  region) 페이지 내에서 landmark content를 가지고 있는 tag에게 부여를 한다 
+  
+  tablist, tabpanel ) tab을 모아둔 리스트는 tablist이고 해당 tab을 클릭했을 때에 보여지는 content가 tabpanel
+  연결되는 tab과 tabpaenl끼리 명시적으로 표시를 하고 싶다면 tab에 id를 부여하고 (예시: id="product-1") tabpanel에는 aria-labelledby="product-1"에 해당 아이디 값을 입력한다
+  
+  
   
