@@ -247,7 +247,6 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   3. state (상태)
   aria-disabled="true" 과 같이 스크린리더에게 현재 상태를 알려주는 역할로 사용 
   
-  
   - WAI-ARIA role 예시들 공부 
   
   region) 페이지 내에서 landmark content를 가지고 있는 tag에게 부여를 한다 
@@ -255,5 +254,8 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   tablist, tabpanel ) tab을 모아둔 리스트는 tablist이고 해당 tab을 클릭했을 때에 보여지는 content가 tabpanel
   연결되는 tab과 tabpaenl끼리 명시적으로 표시를 하고 싶다면 tab에 id를 부여하고 (예시: id="product-1") tabpanel에는 aria-labelledby="product-1"에 해당 아이디 값을 입력한다
   
+  - carousel: transform, translate사용 0 -> -25% -> -50% -> -75% 식으로 이동을 하면서 carousel이 작동을 하게 된다 
+  
+  carousel js 중 대표적인 것 하나 tiny-slider.js
   
   
