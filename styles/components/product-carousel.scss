@@ -19,7 +19,7 @@
     margin: 0 4px;
     &.tns-nav-active {
       button {
-        transform: scale(1.33333);
+        transform: scale(1.333333);
         opacity: 1;
       }
     }
@@ -64,6 +64,7 @@
       margin: 0 8px 0 0;
       &.tns-nav-active {
         button {
+          @include flexbox;
           border: 2px solid $blue;
           transform: none;
         }
@@ -79,6 +80,33 @@
       img {
         display: block;
         width: 56px;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    @include flexbox(end, start);
+    flex-direction: row-reverse;
+
+    &-slider {
+      width: 500px;
+      height: 500px;
+    }
+
+    &-thumbnail {
+      margin-right: 8px;
+    }
+    .thumbnail-list {
+      flex-direction: column;
+    }
+
+    .thumbnail-item {
+      margin-right: 0;
+      margin-bottom: 8px;
+      button,
+      img {
+        width: 75px;
+        height: 75px;
       }
     }
   }
