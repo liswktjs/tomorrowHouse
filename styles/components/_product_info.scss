@@ -20,7 +20,8 @@
     .info-review {
       @include flexbox(start);
 
-      .star-rating-13 {
+      .star-rating {
+        @include star-rating(13px);
         margin-right: 8px;
       }
       p {
@@ -66,12 +67,48 @@
   }
 
   &-delivery {
+    @include text-style(16, $primary);
     padding-top: 12px;
     border-top: 1px solid $border;
 
     span {
       display: block;
       margin-bottom: 2px;
+    }
+  }
+
+  @include responsive(T) {
+    padding: 0;
+
+    &-header {
+      .info-brand {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      .info-title {
+        @include text-style(24);
+        margin-bottom: 8px;
+      }
+
+      .info-review {
+        .star-rating {
+          font-size: 16px;
+        }
+
+        p strong {
+          margin-right: -3px;
+        }
+      }
+    }
+
+    &-delivery {
+      padding-top: 16px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $border;
+      span {
+        margin-bottom: 8px;
+      }
     }
   }
 }
