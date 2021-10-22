@@ -265,3 +265,5 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   :그리드로 작업을 하게 되면 그리드 내에 있는 콘텐츠들의 자리를 잡는 것은 편하지만 그리드 범위를 벗어나는 요소들의 경우 추가적인 작업을 해주어야 한다 
   div와 같은 block요소들은 부모의 width값을 상속받게 되는데 만일 해당 요소의 width값을 100%라는 식으로 width값을 명시 하지 않은 채로 margin-left: -15px (grid 적용 범위에 따라 값이 달라짐) 
   margin-left: -15px; 과 같은 작업을 해주게 되면 width값이 원하는 데로 늘어날 수 있다 
+
+  😎 2021.10.22 product info 마크업 + 스타일 작업 + order form 마크업 + 스타일 
