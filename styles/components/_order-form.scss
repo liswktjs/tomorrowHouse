@@ -1,5 +1,6 @@
 .order-form {
   margin-bottom: 40px;
+
   .order-inputs {
     margin-bottom: 20px;
     .select-group {
@@ -11,6 +12,16 @@
     }
   }
 
+  .order-checkouts {
+    margin-bottom: 20px;
+    .checkout-item {
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
   .order-summary {
     @include flexbox(between);
     margin-bottom: 20px;
