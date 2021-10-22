@@ -102,6 +102,35 @@
       }
     }
 
+    &-price {
+      .info-price-wrapper {
+        @include flexbox(start, end);
+        margin-bottom: 12px;
+      }
+
+      .discount-rate {
+        align-items: flex-end;
+        margin-right: 16px;
+        .rate {
+          font-size: 44px;
+          line-height: 36px;
+        }
+        .percent {
+          line-height: 1;
+        }
+      }
+
+      .info-sale-price {
+        margin-bottom: 0;
+        .price-32 {
+          margin-right: 8px;
+        }
+      }
+
+      .info-point {
+        margin-bottom: 20px;
+      }
+    }
     &-delivery {
       padding-top: 16px;
       padding-bottom: 20px;
