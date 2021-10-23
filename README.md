@@ -266,10 +266,14 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   div와 같은 block요소들은 부모의 width값을 상속받게 되는데 만일 해당 요소의 width값을 100%라는 식으로 width값을 명시 하지 않은 채로 margin-left: -15px (grid 적용 범위에 따라 값이 달라짐) 
   margin-left: -15px; 과 같은 작업을 해주게 되면 width값이 원하는 데로 늘어날 수 있다 
 
-  😎 2021.10.22 product info 마크업 + 스타일 작업 + order form 마크업 + 스타일 
+ 😎 2021.10.22 product info 마크업 + 스타일 작업 + order form 마크업 + 스타일 
   
   - output tag : <output> select 그룹에서 무엇을 선택했는지 결과값을 보여줄 때 사용하는 tag , 어떤 select 그룹에 대한 결과값인 표기하기 위해 label과 똑같이 for로 select id 값을 명시해준다
   
  - apperance:none -> 브라우저에 기본적으로 적용되어 있는 form style들 화살표 등이 보이지 않게 된다 
  
- - pointer-events:none -> 스타일링을 위해서 작업을 할때에 select 그룹에 새로운 이미지를 넣어줄 수 있는데 해당 이미지를 눌러도 select group의 후보들이 나오게 하기 위해서는 스타일링을 위해 넣어준 이미지에 pointer-events:none을 적용해야 select 그룹을 누른 효과가 동일하게 
+ - pointer-events:none -> 스타일링을 위해서 작업을 할때에 select 그룹에 새로운 이미지를 넣어줄 수 있는데 해당 이미지를 눌러도 select group의 후보들이 나오게 하기 위해서는 스타일링을 위해 넣어준 이미지에 pointer-events:none을 적용해야 select 그룹을 누른 효과가 동일하게 작동한다 
+  
+🤗 2021.10.23 component 생성 
+  
+ - 애플이 권장하는 최소 버튼 크기는 44px * 44px -> 유저가 터치를 할 때에 편하게 작동하기 위한 최소 크기 
