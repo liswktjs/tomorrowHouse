@@ -278,6 +278,8 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   
  - 애플이 권장하는 최소 버튼 크기는 44px * 44px -> 유저가 터치를 할 때에 편하게 작동하기 위한 최소 크기 
 
- - table 스타일링 작업할 때 적용해야 할 것 들 
+ - table 스타일링 작업할 때 유용한 스타일 속성들
   1.  table-layout : fixed ->  table의 크기를 고정시키는 역할을 한다 
   2.  border-collapse: collapse -> table td th 간에 border를 기존 스타일링 그대로 적용하게 되면 element 사이에 간격이 존재하게 되는데 이러한 간격을 없애주는 역할을 한다 
+  3.  vertical-align: top -> 테이블내 문자열들이 칸의 위쪽부터 채워지도록 
+  
