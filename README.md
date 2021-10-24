@@ -289,6 +289,6 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   하지만 a tag의 기능을 활용하게 되면 브라우저 히스토리에 클릭마다 기록이 되기 때문에 유저의 사용경험을 떨어 뜨린다 -> 대신해서 button을 사용하자!
   
  - fixed on scroll
- : position: sticky 사용하기 
+ : position: sticky을 적용하게 되면 스크롤을 내리게 되어도 지정한 위치에 해당 element가 계속 위치하게 된다 
   
   
