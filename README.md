@@ -288,6 +288,7 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
  - a href에 element의 id를 넣게 되면 (예를 들어 "#test1") 링크 클릭시 해당 element로 화면이 이동하게 된다 
   하지만 a tag의 기능을 활용하게 되면 브라우저 히스토리에 클릭마다 기록이 되기 때문에 유저의 사용경험을 떨어 뜨린다 -> 대신해서 button을 사용하자!
   
- - button클릭시 해당 content로 이동하는 방법 
+ - fixed on scroll
+ : position: sticky 사용하기 
   
   
