@@ -283,7 +283,7 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   2.  border-collapse: collapse -> table td th 간에 border를 기존 스타일링 그대로 적용하게 되면 element 사이에 간격이 존재하게 되는데 이러한 간격을 없애주는 역할을 한다 
   3.  vertical-align: top -> 테이블내 문자열들이 칸의 위쪽부터 채워지도록 
   
-🍞 2021.10.24 
+🍞 2021.10.24 product-tab 마크업 디자인 작업
   
  - a href에 element의 id를 넣게 되면 (예를 들어 "#test1") 링크 클릭시 해당 element로 화면이 이동하게 된다 
   하지만 a tag의 기능을 활용하게 되면 브라우저 히스토리에 클릭마다 기록이 되기 때문에 유저의 사용경험을 떨어 뜨린다 -> 대신해서 button을 사용하자!
