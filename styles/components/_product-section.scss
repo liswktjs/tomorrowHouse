@@ -2,8 +2,9 @@
   padding-bottom: 20px;
   &-divider {
     height: 8px;
-    margin: 0 -#{$grid-margin}px;
+    margin: 0 -#{$grid-margin};
     background-color: $border;
+    margin-top: 20px;
   }
 
   @include responsive(T) {
