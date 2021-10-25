@@ -293,3 +293,8 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
   
   
 🍟 2021.10.25 제품 상세설명 쪽 스타일링 
+  
+ - 그라데이션 만들기 
+  그라데이션 효과를 적용하고 싶은 이미지나 element 위에 새로운 div element를 생성한다 (+ 보통은 position: absolute을 활용하여 위치를 조정한다) 
+  해당 element에 background-img: linear-gradient() 를 적용해 그라데이션을 조절하여 효과를 
+  
