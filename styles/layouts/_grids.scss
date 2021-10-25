@@ -25,19 +25,6 @@
 * container - 1140px
 */
 
-$gutter: 20px;
-
-$sm-columns: 4;
-$sm-margin: 5px;
-
-$md-columns: 12;
-$md-margin: 30px;
-$md-max-container: 960px + $md-margin * 2; /*콘텐츠가 표기되는 부분이 960px로 보여야 하기 때문에*/
-
-$lg-columns: 12;
-$lg-unit: 75px;
-$lg-max-container: ($lg-unit + $gutter) * $lg-columns;
-
 .container {
   width: 100%;
   padding: 0 $sm-margin;

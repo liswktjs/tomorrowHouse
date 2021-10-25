@@ -16,7 +16,7 @@
   .text-button,
   .icon-button {
     @include pos-center-y;
-
+    right: -#{$grid-margin};
     &:active {
       opacity: 0.4;
     }
@@ -24,9 +24,8 @@
   .text-button {
     position: absolute;
     @include text-style(14, $blue);
-    right: -15px;
     font-weight: 700;
-    padding: 15px;
+    padding: $grid-margin;
   }
 
   .icon-button {
@@ -34,9 +33,8 @@
     position: absolute;
     color: $secondary;
     font-size: 22px;
-    right: -15px;
-    width: 22px + (15px * 2);
-    height: 22px + (15px * 2);
+    width: 22px + ($grid-margin * 2);
+    height: 22px + ($grid-margin * 2);
     &.is-right {
       transform: translateY(-50%) rotate(-90deg);
     }
