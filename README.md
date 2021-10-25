@@ -292,3 +292,4 @@ inline-flex의 경우 inline block과 같은 취급을 하여 요소들이 수�
  : position: sticky을 적용하게 되면 스크롤을 내리게 되어도 지정한 위치에 해당 element가 계속 위치하게 된다 
   
   
+🍟 2021.10.25 제품 상세설명 쪽 스타일링 
