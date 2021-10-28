@@ -5,6 +5,9 @@
     margin: 0 -#{$grid-margin};
     background-color: $border;
     margin-top: 20px;
+    &.is-big {
+      height: 24px;
+    }
   }
 
   @include responsive(T) {
