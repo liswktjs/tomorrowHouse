@@ -1,0 +1,24 @@
+.product-recommendation {
+  .product-list {
+    @include flexbox(between, start);
+    flex-wrap: wrap;
+  }
+  .product-item {
+    width: calc(50% - 10px);
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include responsive(T) {
+    .product-item {
+      width: calc(33.333% - 11px);
+      &:last-child {
+        display: none;
+      }
+      margin-bottom: 0 !important;
+    }
+  }
+}
