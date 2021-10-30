@@ -30,6 +30,7 @@
     line-height: 16px;
     color: $dark;
     font-weight: 400;
+    @include line-clamp(2);
   }
 
   &-price {
