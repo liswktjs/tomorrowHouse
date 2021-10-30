@@ -329,3 +329,26 @@ margin-left: -15px; 과 같은 작업을 해주게 되면 width값이 원하는 
 - 100% - 20px와 같이 전체 width 값에서 특정 px값(예시 마진 값) 을 빼고 길이를 구하고 싶을때 calc() 함수 사용하기!
 
 예시) width: calc(100% - 20px);
+
+- 이미지 위에 마우스 올렸을 때에 이미지 크기 일시적으로 키우기를 하고 싶을 때에는 trasnform: scale(1.5) 식으로 transform을 활용한다
+
+- height값이 명확하게 정해져 있지 않은 상태(예를들어 기기에 따라서 반응형으로 width, height값이 달라지거나 유저가 올리는 이미지가 정사각형 아닌 경우 등등)
+  에서 1:1비율에 맞춰서 이미지 크기를 조정하고 싶다면 width:100%; height: 0;를 준 후 padding-bottom: 100%;를 주면 된다
+  (\*width는 부모의 값을 기준으로 값이 정해지고 height는 자식 요소들의 크기에 따라서 값이 정해진다 즉 둘의 기준점이 다르기 때문에 height에 %를 적용해서 동일한 효과를 줄 수 없다 )
+
+  참고로 img를 감싸고 있는 요소에게 width: 100 height 0 padding-bottom: 100%식으로 적용을 했다면, img에게는 position:absolute를 통해 가운데 정렬을 해서 크기를 맞출 수 있다 (참고로 img의 width와 height 값은 모두 100% 부모 요소에게는 position:relatvie)
+
+  만약 2:1의 비율의 크기를 가지고 싶다면 padding-bottom: 50%를 준다
+
+- truncate : 한줄로 된 text에서 일정 부분을 초과한 텍스트를 ...로 처리할 때 사용
+
+- line-clamp: 두줄 이상으로 나누어진 text에서 일정 부분을 초과한 텍스트를 ...으로 처리할 때 사용
+
+  ->사용방법: ...처리를 원하는 element에 적용하기
+
+  ```
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // text가 몇줄로 구성될 것인지에 따라 숫자 넣기
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  ```
