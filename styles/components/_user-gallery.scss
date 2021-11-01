@@ -1,17 +1,63 @@
 .user-gallery {
   margin: 0 -#{$grid-margin};
+  overflow: hidden;
   &-slider {
+    position: relative;
     margin-bottom: 4px;
+  }
+  &-controls {
+    @include pos-center;
+    @include flexbox(between);
+    width: 100%;
+    padding: 0 52px;
+    .control-button {
+      @include flexbox;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 28px;
+      color: $primary;
+      background-color: $white;
+      transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+      &.is-prev {
+        i {
+          margin-left: -2px;
+          display: block;
+          transform: rotate(90deg);
+        }
+      }
+      &.is-next {
+        i {
+          display: block;
+          margin-right: -2px;
+          transform: rotate(-90deg);
+        }
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $blue;
+      }
+      &[disabled] {
+        visibility: hidden;
+      }
+    }
   }
   .thumbnail-list {
     @include flexbox(start);
     margin-left: 2px;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   .thumbnail-item {
     margin-right: 4px;
     &.tns-nav-active {
       button {
         border: 3px solid $blue;
+        overflow: hidden;
       }
     }
     &:last-child {
@@ -22,13 +68,13 @@
       width: 64px;
       height: 64px;
       border-radius: 4px;
+      overflow: hidden;
 
       img {
         display: block;
-        width: 100%;
-        height: 100%;
+        width: 64px;
+        height: 64px;
         object-fit: cover;
-        border-radius: 4px;
       }
     }
   }
@@ -44,6 +90,11 @@
       button {
         width: 75px;
         height: 75px;
+
+        img {
+          width: 75px;
+          height: 75px;
+        }
       }
     }
   }
