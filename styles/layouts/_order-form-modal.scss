@@ -5,6 +5,9 @@
   z-index: $order-form-modal-level;
   display: none;
   width: 100%;
+  max-height: 75vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
   background-color: $white;
   padding-top: 16px;
   border-radius: 12px 12px 0 0;
@@ -19,13 +22,20 @@
   .order-summary {
     margin-bottom: 16px;
   }
+  .order-summary {
+    margin-bottom: 48px + (4px * 2) + 16px;
+  }
   .order-inputs {
     margin-bottom: 8px;
   }
 
   .button-group {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
     padding: 4px;
-    padding-top: 0;
   }
 
   @include responsive(T) {
