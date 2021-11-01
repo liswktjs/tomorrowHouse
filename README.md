@@ -354,3 +354,16 @@ margin-left: -15px; 과 같은 작업을 해주게 되면 width값이 원하는 
   ```
 
   🎃 2021.10.31 유저들의 스타일링샷 부분 마크업 + 스타일링 작업 + slider 효과 적용
+
+✨ 2021.11.01 유저들의 스타일링샷 스타일링 작업 / orderCTA 마크업 + 스타일링
+
+- tiny-slider.js 사용시 팁
+
+1. link를 통해서 import 하는 형식
+   (공식문서 : https://www.npmjs.com/package/tiny-slider )
+2. 화살표의 경우 controlsContainer를 활용해서 새롭게 스타일링이 가능하다
+3. 미리보기 thumbnail방식도 작업 가능
+4. 반응형에 따른 대응도 가능
+5. gutter와 edgePadding을 통해서 slider간의 간격 조정 가능
+
+- CTA : Call To Action의 줄임말
