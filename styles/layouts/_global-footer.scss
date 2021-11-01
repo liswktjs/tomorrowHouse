@@ -2,6 +2,7 @@
   padding-top: 32px;
   padding-bottom: 40px;
   background-color: $background;
+  margin-bottom: $order-cta-height;
   &-title {
     @include text-style(13, $dark);
     font-weight: 700;
@@ -42,6 +43,7 @@
   }
 
   @include responsive(D) {
+    margin-bottom: 0;
     &-title {
       @include text-style(14);
     }
