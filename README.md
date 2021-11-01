@@ -355,7 +355,7 @@ margin-left: -15px; 과 같은 작업을 해주게 되면 width값이 원하는 
 
   🎃 2021.10.31 유저들의 스타일링샷 부분 마크업 + 스타일링 작업 + slider 효과 적용
 
-✨ 2021.11.01 유저들의 스타일링샷 스타일링 작업 / orderCTA 마크업 + 스타일링
+✨ 2021.11.01 유저들의 스타일링샷 스타일링 작업 / orderCTA 마크업 + 스타일링 작업 완료
 
 - tiny-slider.js 사용시 팁
 
@@ -367,3 +367,10 @@ margin-left: -15px; 과 같은 작업을 해주게 되면 width값이 원하는 
 5. gutter와 edgePadding을 통해서 slider간의 간격 조정 가능
 
 - CTA : Call To Action의 줄임말
+
+- scroll이 활성화된 영역만 가능하도록 하는 방법 :
+  overscroll-behavior: contain
+
+- sticky 사용시 (스크롤을 내리다가 특정 위치부터 고정시키기 원할 때 사용) top을 통해서 위치를 조정해 주어야 한다
+
+=> 현재 게시 되어 있는 곳 까지 강의 수강 완료 👊 후에 강의 업데이트 시 다시 시작 예정!
