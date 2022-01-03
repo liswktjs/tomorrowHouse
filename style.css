@@ -2869,7 +2869,10 @@ i {
   padding: 40px 24px;
   border-radius: 8px;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  display: none; }
+  .cart-modal.is-active {
+    display: block; }
   .cart-modal .cart-title {
     font-size: 16px;
     line-height: 24px;

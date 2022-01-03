@@ -8,6 +8,11 @@
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
   .cart-title {
     @include text-style(16, $dark);
     margin-bottom: 24px;
