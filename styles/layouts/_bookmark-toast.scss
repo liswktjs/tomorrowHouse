@@ -1,0 +1,39 @@
+.bookmark-toast {
+  $close-button-size: 36px;
+  @include flexbox(between);
+  position: fixed;
+  z-index: $bookmark-toast-level;
+  bottom: 0;
+  left: 0;
+  background-color: $white;
+  box-shadow: $popup-reversed-shadow;
+  width: 100%;
+  height: 56px;
+  padding-left: $close-button-size;
+  padding-right: $grid-margin;
+  .bookmark-title {
+    @include text-style(13, $primary);
+    font-weight: 400;
+  }
+
+  .close-button {
+    @include pos-center-y;
+    @include inline-flexbox;
+    width: $close-button-size;
+    height: $close-button-size;
+    font-size: 20px;
+    left: 0;
+    color: $tertiary;
+
+    &:active {
+      color: $secondary;
+    }
+  }
+
+  .button-group {
+    @include flexbox(end);
+    a {
+      margin-right: 4px;
+    }
+  }
+}

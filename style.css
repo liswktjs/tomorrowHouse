@@ -2902,4 +2902,45 @@ i {
         letter-spacing: -0.02em;
         height: 55px; } }
 
+.bookmark-toast {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 600;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 -4px 20px rgba(63, 65, 80, 0.3);
+  width: 100%;
+  height: 56px;
+  padding-left: 36px;
+  padding-right: 15px; }
+  .bookmark-toast .bookmark-title {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+    font-weight: 400; }
+  .bookmark-toast .close-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    left: 0;
+    color: #b2b3b9; }
+    .bookmark-toast .close-button:active {
+      color: #8c8d96; }
+  .bookmark-toast .button-group {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .bookmark-toast .button-group a {
+      margin-right: 4px; }
+
 /*# sourceMappingURL=style.css.map */
